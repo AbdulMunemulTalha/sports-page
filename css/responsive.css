@@ -93,6 +93,10 @@
     width: unset;
   }
 
+  .btn-manu {
+    border: none !important;
+  }
+
   .blog-sec-r-manu a {
     background-color: unset;
     padding: unset;
@@ -142,6 +146,7 @@
     margin: 0 auto;
   }
 
+  /* banner start */
   .top-sec {
     height: 100%;
     width: 100%;
@@ -175,7 +180,6 @@
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
     padding: unset;
     height: 40px;
     width: 357px;
@@ -208,6 +212,7 @@
   }
 
 
+  /* blog start  */
 
   .blog-sec {
     flex-direction: column;
@@ -228,6 +233,10 @@
     background-color: unset;
   }
 
+  .btn-manu {
+    border: none !important;
+  }
+
   .blog-sec-r-manu a {
     border: 2px solid gray;
     border-radius: 14px;
@@ -236,6 +245,7 @@
     width: 220px;
     height: 60px;
   }
+
 
   .blog-item-indvisual {
     width: 100%;

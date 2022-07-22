@@ -10,7 +10,8 @@ font-family: 'Open Sans', sans-serif;
     --bluesan: #5927e5;
     --lite-sky: #00b8ff;
     --white: #ffffff;
-    --off-white: #dcdcdc;
+    --off-white: #e7e7e7;
+    --gry: #a1a1a1;
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Open Sans', sans-serif;
 }
@@ -103,11 +104,28 @@ section {
     font-size: 80px;
 }
 
+/* ----------animation----------- */
+.tsec-left-title h1 {
+    animation-name: fademytext;
+    animation-duration: 4s;
+}
+
+@keyframes fademytext {
+    0% {
+
+        font-size: 55px;
+    }
+
+}
+
+/* ----------animation----------- */
+
 .tsec-left-title>p {
     line-height: 30px;
     font-size: 20px;
     padding-right: 47px;
 }
+
 
 .tsec-left-title>a>button {
     border: none;
@@ -118,9 +136,17 @@ section {
     font-weight: 500;
     border-radius: 10px;
     box-shadow: 0px 0px 1px black;
+
 }
 
-.tsec-left-title>a>button>i {
+
+.tsec-left-title>a>button:hover {
+    background: transparent;
+    border: 2px solid var(--lite-sky);
+    transition: all 0.3s ease 0s;
+}
+
+.tsec-left-title>a>i {
     margin-left: 10px;
     font-size: 16px;
 }
@@ -142,7 +168,25 @@ section {
     object-fit: cover;
 }
 
-/* top banner section end */
+/* ----------animation----------- */
+.tright-img-item>img:hover {
+    animation: fadeIn ease 4s;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ----------animation----------- */
+
+
 
 /* blog section start  */
 
@@ -214,9 +258,16 @@ section {
     padding: 6px 19px;
     font-size: 18px;
     font-weight: 500;
-    background-color: white;
+    background-color: var(--off-white);
     border-radius: 8px;
     margin: 13px 0;
+    border: 1px solid;
+}
+
+.blog-btn-info>a>button:hover {
+    background-color: var(--lite-sky);
+    color: var(--white);
+    transition: all 0.3s ease 0s;
 }
 
 .blog-btn-info>p {
@@ -258,7 +309,7 @@ footer {
     font-size: 50px;
     font-weight: 600;
     text-align: center;
-    color: white;
+    color: var(--white);
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -278,10 +329,11 @@ footer {
     font-weight: 500;
     line-height: 24px;
     text-align: left;
-    color: #b9b9b9;
+    color: var(--gry);
 }
 
 .footer-manu>a:hover {
+    font-size: 15px;
     line-height: 23px;
     border-bottom: 1px solid var(--lite-sky);
     transition: all 0.3s ease 0s;
@@ -310,10 +362,10 @@ footer {
 
 .footer-social-icons>a>i {
     font-size: 38px;
-    color: var(--lite-sky);
+    color: var(--white);
 }
 
 .footer-social-icons>a>i:hover {
-    color: #00b8ff;
+    color: var(--lite-sky);
     transition: all 0.3s ease 0s;
 }

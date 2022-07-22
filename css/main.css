@@ -312,3 +312,8 @@ footer {
     font-size: 38px;
     color: var(--lite-sky);
 }
+
+.footer-social-icons>a>i:hover {
+    color: #00b8ff;
+    transition: all 0.3s ease 0s;
+}

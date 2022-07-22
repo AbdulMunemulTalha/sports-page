@@ -37,6 +37,12 @@
     margin: 0 auto;
   }
 
+  .view-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* banner start */
 
   .top-sec {
@@ -117,6 +123,10 @@
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
+  }
+
+  .displaynone {
+    display: none;
   }
 
   .blog-item-indvisual {
